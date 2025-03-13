@@ -1,6 +1,8 @@
 import SkillsContentBlock from "@/components/SkillsContentBlock";
 import { SkillCategoryType, SkillItemType } from "@/types/skills";
 
+console.log(`${`https://${process.env.NEXT_PUBLIC_VERCEL_URL}`}/api/skills`);
+
 const fetchSkills = async (): Promise<
   Record<SkillCategoryType, SkillItemType[]>
 > => {

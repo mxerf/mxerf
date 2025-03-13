@@ -4,7 +4,7 @@ import { MdEmail } from "react-icons/md";
 
 const ContactsView = () => {
   return (
-    <div className="max-w-[1440px] p-16 mx-auto">
+    <div className="max-w-[1440px] p-16 max-md:py-8 max-md:px-4 mx-auto">
       <section className="section-heading mt-0">
         <h2 className="section-title">Get in touch</h2>
         <p className="section-description">
@@ -12,7 +12,7 @@ const ContactsView = () => {
         </p>
       </section>
       <section className="flex font-kanit font-medium">
-        <div className="w-1/4 flex flex-col gap-4">
+        <div className="w-1/4 max-md:w-full flex flex-col gap-4">
           <GradientCard
             as={"a"}
             href={"https://t.me/mxerf_dev"}

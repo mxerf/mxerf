@@ -81,25 +81,28 @@ html {
   }
 
   .section-title {
-    @apply text-6xl font-medium;
+    @apply text-6xl max-md:text-5xl max-md:text-center max-md:mb-2 font-medium;
   }
   .section-description {
-    @apply text-lg text-muted-foreground;
+    @apply text-lg max-md:text-base max-md:text-center text-muted-foreground;
   }
   .section-heading {
     @apply mb-8 mt-16;
   }
   .milestone-title {
-    @apply text-5xl font-kanit font-medium;
+    @apply text-5xl max-md:text-2xl font-kanit font-medium;
   }
   .milestone-description {
-    @apply text-muted-foreground text-lg font-medium font-geologica;
+    @apply text-muted-foreground text-lg max-md:text-sm font-medium font-geologica;
   }
   .milestone-content-title {
     @apply text-3xl font-kanit font-medium;
   }
   .milestone-content-description {
     @apply text-muted-foreground font-medium font-geologica;
+  }
+  .experience-card-gradient-box {
+    @apply grid grid-cols-2 max-xl:grid-cols-1 gap-4;
   }
   .experience-card-gradient-text {
     @apply group-hover:opacity-50 transition-opacity duration-300 absolute w-full h-full flex items-center justify-center bg-gradient-to-r bg-clip-text text-transparent text-xl font-semibold;

@@ -34,7 +34,7 @@ const experienceTimeline = [
               institution.
             </p>
           </div>
-          <div className="flex gap-4 mb-4">
+          <div className="experience-card-gradient-box mb-4">
             <GradientCard
               as={"a"}
               href="https://istok-demo.ru/"
@@ -92,7 +92,7 @@ const experienceTimeline = [
               processes.
             </p>
           </div>
-          <div className="grid grid-cols-2 gap-4 my-4">
+          <div className="grid grid-cols-2 max-md:grid-cols-1 gap-4 my-4">
             <GradientCard
               as={"a"}
               href="https://leepy-new.vercel.app/"
@@ -116,8 +116,8 @@ const experienceTimeline = [
               title="Robot Wash"
               description="Carwash management system for staff with client management, and other features."
               colors={["#FFFFFF", "#9A5501", "#E4C167", "#000000"]}
-              className="h-max flex-grow"
-              containerClassName="flex flex-col"
+              className="h-full flex-grow"
+              containerClassName="flex flex-col min-h-[280px]"
             >
               <p className="experience-card-gradient-text relative group-hover:opacity-100 to-[#fff5ec] via-[#E4C167] from-[#9A5501]">
                 robotwash.
@@ -128,7 +128,7 @@ const experienceTimeline = [
               description="Voting system for corporate competitions."
               colors={["#FFFFFF", "#FF6666", "#D31A18", "#000000"]}
               className="h-full flex-grow"
-              containerClassName="flex flex-col col-span-2 min-h-[280px]"
+              containerClassName="flex flex-col col-span-2 max-md:col-span-1 min-h-[280px]"
             >
               <p className="experience-card-gradient-text relative group-hover:opacity-100 to-[#ffdddd] from-[#D31A18]">
                 rzd vote.
@@ -168,13 +168,12 @@ const experienceTimeline = [
             tools.
           </p>
         </div>
-        <div className="flex gap-4">
+        <div className="experience-card-gradient-box">
           <GradientCard
             as={"a"}
             href={"https://github.com/deeppavlov/chatsky-ui"}
             target="_blank"
-            className="flex-grow h-max"
-            containerClassName="flex flex-col w-1/2"
+            className="h-max"
             title="Chatsky UI"
             description="Chatsky UI helps you create versatile chatbots for business purposes and personal needs."
             colors={["#FFFFFF", "#FFAD0D", "#01A2FF", "#000000"]}
@@ -192,8 +191,7 @@ const experienceTimeline = [
             as={"a"}
             href={"https://github.com/deeppavlov/chatsky-ui"}
             target="_blank"
-            className="flex-grow h-max"
-            containerClassName="flex flex-col w-1/2"
+            className="h-max"
             title="Chatsky Docs"
             description="Chatsky Docs provides detailed information about Chatsky UI, including its features and usage."
             colors={["#FFAD0D", "#01A2FF", "#FFAD0D", "#01A2FF"]}
@@ -247,13 +245,12 @@ const experienceTimeline = [
             , laying a solid foundation for building modern web applications.
           </p>
         </div>
-        <div className="flex gap-4">
+        <div className="experience-card-gradient-box">
           <GradientCard
             as={"a"}
             href={"https://avtomix27.ru"}
             target="_blank"
-            className="flex-grow h-max"
-            containerClassName="flex flex-col w-1/2"
+            className="h-max"
             title="Avtomix 27"
             description="Avtomix 27 is a base html+css+js site for car service center."
             colors={["#FFFFFF", "#FFC700", "#3D4CD9", "#000000"]}
@@ -271,8 +268,7 @@ const experienceTimeline = [
             as={"a"}
             href={"https://github.com/deeppavlov/chatsky-ui"}
             target="_blank"
-            className="flex-grow h-max"
-            containerClassName="flex flex-col w-1/2"
+            className="h-max"
             title="Tahografdv"
             description="Tahografdv is a base html+css+js site for car service center."
             colors={["#E90825", "#3D4CD9", "#E90825", "#3D4CD9"]}
@@ -294,7 +290,7 @@ const experienceTimeline = [
 
 const ExperienceView = () => {
   return (
-    <div className="max-w-[1440px] p-16 mx-auto">
+    <div className="max-w-[1440px] p-16 max-md:py-8 max-md:px-4 mx-auto">
       <section className="section-heading mt-0">
         <h2 className="section-title">Work experience</h2>
         <p className="section-description">

@@ -9,14 +9,14 @@ const Home = () => {
       <Hero />
       <div
         id="experience"
-        className="border border-chart-2/20 bg-gradient-to-bl from-foreground/5 to-chart-2/5 rounded-[72px] mb-8"
+        className="border border-chart-2/20 bg-gradient-to-bl from-foreground/5 to-chart-2/5 rounded-[72px] max-md:rounded-[48px] mb-16 max-md:mb-8"
       >
         <ExperienceView />
       </div>
-      <div className="max-w-[1440px] px-16 mx-auto mb-32">
+      <div className="max-w-[1440px] px-16 max-md:px-8 mx-auto mb-32">
         <SkillsView />
       </div>
-      <div className="border border-chart-1/20 bg-gradient-to-bl from-chart-1/5 to-chart-3/5 rounded-[72px]">
+      <div className="border border-chart-1/20 bg-gradient-to-bl from-chart-1/5 to-chart-3/5 rounded-[72px] max-md:rounded-[48px]">
         <ContactsView />
       </div>
     </main>
