@@ -4,9 +4,12 @@ import { SkillCategoryType, SkillItemType } from "@/types/skills";
 const fetchSkills = async (): Promise<
   Record<SkillCategoryType, SkillItemType[]>
 > => {
-  const res = await fetch("http://localhost:3000/api/skills", {
-    cache: "no-store",
-  });
+  const res = await fetch(
+    `${process.env.NEXT_PUBLIC_API_URL ?? `https://${process.env.VERCEL_URL}`}/api/skills`,
+    {
+      cache: "no-store",
+    }
+  );
 
   if (!res.ok) {
     throw new Error("Ошибка загрузки данных");
