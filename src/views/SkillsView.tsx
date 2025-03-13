@@ -5,7 +5,7 @@ const fetchSkills = async (): Promise<
   Record<SkillCategoryType, SkillItemType[]>
 > => {
   const res = await fetch(
-    `${process.env.NEXT_PUBLIC_API_URL ?? `https://${process.env.VERCEL_URL}`}/api/skills`,
+    `${process.env.NEXT_PUBLIC_API_URL ?? `https://${process.env.NEXT_PUBLIC_VERCEL_URL}`}/api/skills`,
     {
       cache: "no-store",
     }
