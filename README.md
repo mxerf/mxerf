@@ -54,15 +54,9 @@
 
 ![Firebase](https://img.shields.io/badge/firebase-a08021?style=for-the-badge&logo=firebase&logoColor=ffcd34) ![Socket.io](https://img.shields.io/badge/Socket.io-black?style=for-the-badge&logo=socket.io&badgeColor=010101) ![Three js](https://img.shields.io/badge/threejs-black?style=for-the-badge&logo=three.js&logoColor=white) ![Electron.js](https://img.shields.io/badge/Electron-191970?style=for-the-badge&logo=Electron&logoColor=white) ![Tauri](https://img.shields.io/badge/tauri-%2324C8DB.svg?style=for-the-badge&logo=tauri&logoColor=%23FFFFFF)
 
-# 📊 GitHub Stats:
-
-![](https://github-readme-stats.vercel.app/api?username=mxerf&theme=gruvbox&hide_border=true&include_all_commits=false&count_private=false)<br/>
-![](https://github-readme-streak-stats.herokuapp.com/?user=mxerf&theme=gruvbox&hide_border=true)<br/>
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=mxerf&theme=gruvbox&hide_border=true&include_all_commits=false&count_private=false&layout=compact)
-
 ### Contact
 
 - 📫 Email: [maksrfx@vk.com](mailto:maksrfx@vk.com)
-- 🖥️ Portfolio: [mxerf.dev](https://mxerf.dev)
+- 🖥️ Portfolio: [mxerf.dev](https://mxerf.vercel.app/)
 
 ---
