@@ -26,7 +26,7 @@ const SkillsContentBlock = ({ category, items }: Props) => {
           {skillContentsMap[category].description}
         </p>
       </div>
-      <div className="grid grid-cols-4 max-md:grid-cols-1 max-xl:grid-cols-2 gap-4">
+      <div className="grid grid-cols-4 max-sm:grid-cols-1 max-xl:grid-cols-2 gap-4">
         {items.map((item) => {
           const className = allowedColSpans.includes(
             `col-span-${item.cols || 1}`
@@ -40,6 +40,7 @@ const SkillsContentBlock = ({ category, items }: Props) => {
               description={item.description}
               icon={item.icon && skillIconsMap[item.icon]}
               containerClassName={cn(className, "max-xl:col-span-1")}
+              descriptionClassName="max-md:hidden"
               colors={item.colors}
               exp={item.exp}
             />

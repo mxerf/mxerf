@@ -1,8 +1,9 @@
 "use client";
 
-import AnimatedHeroDescription from "@/components/AnimatedHeroDescription";
-import Typewriter from "@/components/typewritter";
-import WordListSwap from "@/components/word-list-swap";
+import AnimatedHeroDescription from "@/components/AnimatedHeroDescr";
+import ThemeSwitcher from "@/components/ThemeSwitcher";
+import Typewriter from "@/components/ui/typewritter";
+import WordListSwap from "@/components/ui/word-list-swap";
 import { LayoutGroup, motion } from "motion/react";
 import Image from "next/image";
 import avatar from "../../public/avatar.jpg";
@@ -10,9 +11,14 @@ import avatar from "../../public/avatar.jpg";
 const Hero = () => {
   return (
     <>
-      <div className="w-screen h-screen max-md:pb-24 flex items-center px-16 max-md:px-12">
+      <div className="w-screen h-screen max-md:pb-24 flex items-center px-16 max-md:px-12 max-w-[1600px] mx-auto">
+        <ThemeSwitcher className="absolute top-8 right-8" />
         <div className="flex flex-col max-md:items-center gap-4 max-md:gap-6 w-full">
-          <Image src={avatar} alt="avatar" className="w-24 h-24 rounded-full" />
+          <Image
+            src={avatar}
+            alt="avatar"
+            className="w-24 h-24 rounded-full animate-fade-in object-cover"
+          />
           <Typewriter
             className="inline-block w-max text-muted-foreground bg-clip-text text-xl max-md:text-lg max-sm:text-sm max-[390px]:text-xs font-bold mb-2 font-source-code-pro"
             text="Hi, my name is Maks (mxerf), and I'm a ..."

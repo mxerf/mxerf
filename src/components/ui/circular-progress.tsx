@@ -1,9 +1,9 @@
 import { motion, useMotionValue, useTransform } from "motion/react";
 
-const SIZE = 100; // Размер SVG
-const STROKE_WIDTH = 10; // Толщина линии
-const RADIUS = (SIZE - STROKE_WIDTH) / 2; // Радиус круга
-const CIRCUMFERENCE = 2 * Math.PI * RADIUS; // Длина окружности
+const SIZE = 100;
+const STROKE_WIDTH = 10;
+const RADIUS = (SIZE - STROKE_WIDTH) / 2;
+const CIRCUMFERENCE = 2 * Math.PI * RADIUS;
 
 const CircularProgress = () => {
   const progress = useMotionValue(0);
