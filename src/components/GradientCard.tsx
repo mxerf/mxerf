@@ -3,7 +3,7 @@ import { useMouse } from "@/hooks/use-mouse";
 import { cn } from "@/lib/utils";
 import { ArrowUpRightIcon } from "lucide-react";
 import { ElementType, type ReactNode } from "react";
-import ExpChip, { ExperienceType } from "./ExpChip";
+import ExpChip, { ExperienceType } from "./ui/exp-chip";
 
 export const GradientCard = ({
   as: Element = "div",
@@ -14,6 +14,7 @@ export const GradientCard = ({
   circleSize = 400,
   className,
   containerClassName,
+  descriptionClassName,
   colors = [
     "hsl(var(--chart-1))",
     "hsl(var(--chart-2))",
@@ -35,6 +36,7 @@ export const GradientCard = ({
   colors?: string[];
   className?: string;
   containerClassName?: string;
+  descriptionClassName?: string;
   exp?: {
     text: string;
     type: ExperienceType;
@@ -45,7 +47,7 @@ export const GradientCard = ({
   return (
     <Element
       className={cn(
-        "group relative transform-gpu overflow-hidden rounded-[20px] bg-white/10 p-2 transition-transform hover:scale-[1.01] active:scale-95",
+        "group relative transform-gpu overflow-hidden rounded-[20px] bg-card p-2 transition-transform hover:scale-[1.01] active:scale-95",
         containerClassName
       )}
       ref={parentRef}
@@ -93,7 +95,12 @@ export const GradientCard = ({
           </h3>
           {exp && <ExpChip text={exp.text} type={exp.type} />}
         </div>
-        <p className="mt-2 text-neutral-600 dark:text-neutral-400">
+        <p
+          className={cn(
+            "mt-2 text-neutral-600 dark:text-neutral-400",
+            descriptionClassName
+          )}
+        >
           {description}
         </p>
       </div>

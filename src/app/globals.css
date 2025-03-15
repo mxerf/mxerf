@@ -4,7 +4,6 @@
 
 html {
   font-family: var(--font-geologica), sans-serif;
-  background-color: hsl(var(--background));
   scroll-behavior: smooth;
 }
 
@@ -12,7 +11,7 @@ html {
   :root {
     --background: 0 0% 100%;
     --foreground: 0 0% 3.9%;
-    --card: 0 0% 100%;
+    --card: 0 0% 80%;
     --card-foreground: 0 0% 3.9%;
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 3.9%;
@@ -43,7 +42,7 @@ html {
   .dark {
     --background: 0 0% 3.9%;
     --foreground: 0 0% 98%;
-    --card: 0 0% 10.98%;
+    --card: 0 0% 22.98%;
     --card-foreground: 0 0% 98%;
     --popover: 0 0% 3.9%;
     --popover-foreground: 0 0% 98%;
@@ -77,29 +76,32 @@ html {
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground transition-colors duration-300;
   }
 
   .section-title {
-    @apply text-6xl font-medium;
+    @apply text-6xl max-md:text-5xl max-md:text-center max-md:mb-2 font-medium;
   }
   .section-description {
-    @apply text-lg text-muted-foreground;
+    @apply text-lg max-md:text-base max-md:text-center text-muted-foreground;
   }
   .section-heading {
     @apply mb-8 mt-16;
   }
   .milestone-title {
-    @apply text-5xl font-kanit font-medium;
+    @apply text-5xl max-md:text-2xl font-kanit font-medium;
   }
   .milestone-description {
-    @apply text-muted-foreground text-lg font-medium font-geologica;
+    @apply text-muted-foreground text-lg max-md:text-sm font-medium font-geologica;
   }
   .milestone-content-title {
     @apply text-3xl font-kanit font-medium;
   }
   .milestone-content-description {
     @apply text-muted-foreground font-medium font-geologica;
+  }
+  .experience-card-gradient-box {
+    @apply grid grid-cols-2 max-xl:grid-cols-1 gap-4;
   }
   .experience-card-gradient-text {
     @apply group-hover:opacity-50 transition-opacity duration-300 absolute w-full h-full flex items-center justify-center bg-gradient-to-r bg-clip-text text-transparent text-xl font-semibold;

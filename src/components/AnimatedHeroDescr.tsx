@@ -27,7 +27,7 @@ const specialWord = {
 export default function AnimatedHeroDescription() {
   return (
     <motion.p
-      className="text-muted-foreground font-geologica text-3xl font-bold w-2/3 leading-relaxed"
+      className="text-muted-foreground font-geologica text-3xl max-md:text-lg max-md:text-center font-bold md:w-2/3 leading-relaxed"
       variants={sentence}
       initial="hidden"
       animate="visible"

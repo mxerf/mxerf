@@ -1,4 +1,4 @@
-import { ExperienceType } from "@/components/ExpChip";
+import { ExperienceType } from "@/components/ui/exp-chip";
 
 export type SkillCategoryType =
   | "base"

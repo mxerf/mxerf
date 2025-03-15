@@ -1,5 +1,6 @@
 import { skillContentsMap, skillIconsMap } from "@/lib/consts";
 import { SkillCategoryType, SkillItemType } from "@/types/skills";
+import { cn } from "@/utils";
 import { GradientCard } from "./GradientCard";
 
 type Props = {
@@ -16,7 +17,7 @@ const allowedColSpans = [
 
 const SkillsContentBlock = ({ category, items }: Props) => {
   return (
-    <section className="mb-8">
+    <section className="mb-16">
       <div className="mb-4">
         <h3 className="text-3xl font-medium">
           {skillContentsMap[category].title}
@@ -25,7 +26,7 @@ const SkillsContentBlock = ({ category, items }: Props) => {
           {skillContentsMap[category].description}
         </p>
       </div>
-      <div className="grid grid-cols-4 gap-4">
+      <div className="grid grid-cols-4 max-sm:grid-cols-1 max-xl:grid-cols-2 gap-4">
         {items.map((item) => {
           const className = allowedColSpans.includes(
             `col-span-${item.cols || 1}`
@@ -38,7 +39,8 @@ const SkillsContentBlock = ({ category, items }: Props) => {
               title={item.title}
               description={item.description}
               icon={item.icon && skillIconsMap[item.icon]}
-              containerClassName={className}
+              containerClassName={cn(className, "max-xl:col-span-1")}
+              descriptionClassName="max-md:hidden"
               colors={item.colors}
               exp={item.exp}
             />

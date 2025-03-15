@@ -5,7 +5,7 @@ import { motion } from "motion/react";
 import { useRouter } from "next/navigation";
 import { ReactNode, useEffect, useRef, useState } from "react";
 import { useCountUp } from "use-count-up";
-import { AnimatedCircularProgressBar } from "../magicui/animated-circular-progress-bar";
+import { AnimatedCircularProgressBar } from "../ui/animated-circular-progress-bar";
 
 const helloOutput = [
   " ",

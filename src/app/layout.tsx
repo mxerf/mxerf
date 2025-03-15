@@ -1,4 +1,3 @@
-import TooltipCursor from "@/components/ui/Cursor";
 import type { Metadata } from "next";
 import {
   Geologica,
@@ -42,11 +41,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark">
+    <html lang="en">
       <body
-        className={`${sourceCodePro.variable} ${kanit.variable} ${geologica.variable} ${museoModerno.variable} antialiased`}
+        className={`${sourceCodePro.variable} ${kanit.variable} ${geologica.variable} ${museoModerno.variable} antialiased dark`}
       >
-        <TooltipCursor />
         {children}
       </body>
     </html>
