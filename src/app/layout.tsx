@@ -1,4 +1,3 @@
-import TooltipCursor from "@/components/ui/cursor";
 import type { Metadata } from "next";
 import {
   Geologica,
@@ -46,7 +45,6 @@ export default function RootLayout({
       <body
         className={`${sourceCodePro.variable} ${kanit.variable} ${geologica.variable} ${museoModerno.variable} antialiased dark`}
       >
-        <TooltipCursor />
         {children}
       </body>
     </html>
