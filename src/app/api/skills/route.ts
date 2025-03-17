@@ -38,7 +38,7 @@ const skills: Record<SkillCategoryType, SkillItemType[]> = {
       colors: ["#FFFFFF", "#FFD43B", "#4282B2", "#FFFFFF"],
       cols: 1,
       exp: {
-        text: "1+ years",
+        text: "1+ year",
         type: "middle",
       },
     },
@@ -56,6 +56,17 @@ const skills: Record<SkillCategoryType, SkillItemType[]> = {
       },
     },
     {
+      category: "backend",
+      title: "PHP",
+      description: "A popular scripting language for web development.",
+      icon: "SiPhp",
+      colors: ["#777BB4", "#4F5B93", "#4F5B93", "#FFFFFF"],
+      exp: {
+        text: "1+ year",
+        type: "middle",
+      },
+    },
+    {
       category: "base",
       title: "Java",
       description:
@@ -67,18 +78,18 @@ const skills: Record<SkillCategoryType, SkillItemType[]> = {
         type: "base",
       },
     },
-    {
-      category: "base",
-      title: "Go",
-      description:
-        "A compiled, multi-threaded programming language from Google, oriented towards high performance and simplicity.",
-      icon: "SiGo",
-      colors: ["#1A1A1A", "#00ADD8", "#FFFFFF", "#FFFFFF"],
-      exp: {
-        text: "learning",
-        type: "base",
-      },
-    },
+    // {
+    //   category: "base",
+    //   title: "Go",
+    //   description:
+    //     "A compiled, multi-threaded programming language from Google, oriented towards high performance and simplicity.",
+    //   icon: "SiGo",
+    //   colors: ["#1A1A1A", "#00ADD8", "#FFFFFF", "#FFFFFF"],
+    //   exp: {
+    //     text: "learning",
+    //     type: "base",
+    //   },
+    // },
   ],
   frontend: [
     {
@@ -231,7 +242,7 @@ const skills: Record<SkillCategoryType, SkillItemType[]> = {
       colors: ["#1E1E1E", "#FFC107", "#FFEB3B", "#FFFFFF"],
       cols: 1,
       exp: {
-        text: ">1 year",
+        text: "1 year",
         type: "base",
       },
     },
@@ -244,7 +255,7 @@ const skills: Record<SkillCategoryType, SkillItemType[]> = {
       colors: ["#1A202C", "#00C58E", "#2F495E", "#FFFFFF"],
       cols: 1,
       exp: {
-        text: ">1 year",
+        text: "1 year",
         type: "base",
       },
     },
@@ -261,6 +272,7 @@ const skills: Record<SkillCategoryType, SkillItemType[]> = {
         text: "2+ years",
         type: "middle",
       },
+      cols: 2,
     },
     {
       category: "backend",
@@ -273,6 +285,7 @@ const skills: Record<SkillCategoryType, SkillItemType[]> = {
         text: "2+ years",
         type: "middle",
       },
+      cols: 2,
     },
     {
       category: "backend",
@@ -296,6 +309,29 @@ const skills: Record<SkillCategoryType, SkillItemType[]> = {
         type: "middle",
       },
     },
+    {
+      category: "backend",
+      title: "Laravel",
+      description: "A PHP framework for building modern web applications.",
+      icon: "SiLaravel",
+      colors: ["#FFFFFF", "#FF2D20", "#FF2D20", "#FFFFFF"],
+      exp: {
+        text: "1 year",
+        type: "middle",
+      },
+    },
+    {
+      category: "backend",
+      title: "Node.js",
+      description:
+        "A runtime environment for executing JavaScript code server-side.",
+      icon: "SiNodedotjs",
+      colors: ["#68A063", "#3C873A", "#3C873A", "#FFFFFF"],
+      exp: {
+        text: "3+ years",
+        type: "master",
+      },
+    },
   ],
   mobile: [
     {
@@ -306,7 +342,7 @@ const skills: Record<SkillCategoryType, SkillItemType[]> = {
       icon: "FaSwift",
       colors: ["#000000", "#FFAC45", "#FFAC45", "#FFFFFF"],
       exp: {
-        text: ">1 year",
+        text: "1 year",
         type: "base",
       },
     },
@@ -319,7 +355,7 @@ const skills: Record<SkillCategoryType, SkillItemType[]> = {
       colors: ["#20232A", "#02569B", "#42A5F5", "#FFFFFF"],
       cols: 1,
       exp: {
-        text: ">1 year",
+        text: "1 year",
         type: "base",
       },
     },
@@ -431,7 +467,7 @@ const skills: Record<SkillCategoryType, SkillItemType[]> = {
       cols: 1,
       exp: {
         text: "3+ years",
-        type: "advanced",
+        type: "master",
       },
     },
     {

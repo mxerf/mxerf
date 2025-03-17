@@ -20,13 +20,16 @@ import {
   SiFlutter,
   SiGo,
   SiJest,
+  SiLaravel,
   SiLinux,
   SiMobx,
   SiMui,
   SiNestjs,
   SiNextdotjs,
   SiNextui,
+  SiNodedotjs,
   SiNuxtdotjs,
+  SiPhp,
   SiPrisma,
   SiRadixui,
   SiReactquery,
@@ -84,6 +87,9 @@ export const skillIconsMap: Record<string, JSX.Element> = {
   SiSocketdotio: <SiSocketdotio size={BASE_ICON_SIZE} fill="#FF9955" />,
   SiGo: <SiGo size={BASE_ICON_SIZE} fill="#00ADD8" />,
   DiJava: <DiJava size={BASE_ICON_SIZE} />,
+  SiLaravel: <SiLaravel size={BASE_ICON_SIZE} fill="#FF2D20" />,
+  SiNodedotjs: <SiNodedotjs size={BASE_ICON_SIZE} fill="#3C873A" />,
+  SiPhp: <SiPhp size={BASE_ICON_SIZE} fill="#4F5B93" />,
 };
 
 export const skillContentsMap: Record<
