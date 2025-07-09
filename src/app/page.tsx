@@ -10,7 +10,7 @@ const Home = () => {
       <Hero />
       <div
         id="experience"
-        className="border border-chart-2/20 bg-gradient-to-bl from-foreground/5 to-chart-2/5 bg-chart-2/5 rounded-[72px] max-md:rounded-[48px] mb-16 max-md:mb-8"
+        className="border border-white/20 bg-gradient-to-bl from-background/5 to-background/5 bg-background/5 rounded-[72px] max-md:rounded-[48px] mb-16 max-md:mb-8"
       >
         <ExperienceView />
       </div>
